@@ -247,13 +247,15 @@ header>nav>div>ul>li>a:hover {
 /* section about */
 .about {
 	box-sizing: border-box;	
+	background-color: white;
+	color: #645858;
+	padding-top: 25px;
 }
 .about>.row {
 	padding-bottom: 200px;
 	height: 150px;
-	background-color: white;
-	color: #645858;
-	padding-top: 25px;
+	
+	
 }
 .container>.row-2 {
 	text-align: center;
@@ -274,11 +276,12 @@ h3 {
 /* section awesome */
 .awesome {
 	box-sizing: border-box;	
+	background-color: black;
+	color: white;
 }	
 .awesome>.row {
 	height: auto;
-	background-color: black;
-	color: white;
+	
 	display: block;
 }
 .phonetxt {
@@ -315,10 +318,11 @@ height: auto;
 /* section numbers */
 .numbers {
 	box-sizing: border-box;	
+	background-color: #b4aeae;
 }	
 .numbers>.row {
 	height: 200px;
-	background-color: #b4aeae;
+	
 }
 .numbers h3 {
 	margin-top: 60px;
@@ -336,13 +340,15 @@ height: auto;
 /* section footer */
 .footer {
 	box-sizing: border-box;	
+	background-color: black;
+	color: white;
+	padding-top: 40px;
 }	
 .footer>.row {
 	height: 300px;
-	background-color: black;
-	color: white;
+	
 	display: block;
-	padding-top: 40px;
+	
 }
 [class*="colfo-"] {
 	float: left;
@@ -350,13 +356,7 @@ height: auto;
 	height: 350px;
 	text-align: left;
  }
-.colfo-1 h3 {
- margin-left: 130px;	
-}
-.colfo-1 p {
- margin-left: 130px;
- margin-top: 23px;
- }
+
  [class*="colforow-"] {
 	display: inline;
 	min-height: 1px;
@@ -406,7 +406,7 @@ height: auto;
 .copy {
 height: 48px;
 text-align: center;
-margin: -90px auto;
+margin: 0 auto;
 color: wheat;
 background-color: grey;
 font-size: 12px;
