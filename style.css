@@ -80,7 +80,7 @@ header>nav>div>ul>li>a:hover {
 }
 /* section hero */
 .hero {
-	background-image: url("f12.jpg");
+	background-image: url("f12.png");
 	background-position: 90% 80%;	
 	height: 90vh;
 	background-size: cover;
