@@ -1,6 +1,26 @@
+/*
+//scrollTo#
+ $('a').click(function() {
+  var href = $(this).attr("href");
+     $('html, body').animate({
+        scrollTop: $(href).offset().top
+     }, 500);
+    return false;
+});
+http://jsfiddle.net/9SDLw/
+jquery
+skrypt
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+*/
+
+/*
+Button do powrótu na górę strony
+https://codyhouse.co/gem/back-to-top/*/
 
 
 /* oryginal */
+
+
 
 * {
 	box-sizing: border-box;
@@ -22,15 +42,15 @@ body {
 }
 /* section header */
 nav {
-	height: 60px;
+	height: 80px;
 }
 header {
-	background-color: #b4aeae;	
+	background-color: #FFC556;	
 }
 header>nav>div>img {
-	margin: -2px 0 0 60px;
+	margin: -2px 0 0 90px;
 	width: auto;
-	height: 60px;
+	height: 80px;
 }
 header>nav>div>ul {
 	margin: 0 100px 0 0;
@@ -42,15 +62,20 @@ header>nav>div>ul>li {
 	display: inline-block;
 }
 header>nav>div>ul>li>a {
-	line-height: 60px;
+	line-height: 80px;
 	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2pt;
 	display: block;
 	margin: 0 0;
 	padding: 0 30px;
+	color: white;
+	text-decoration: none;
 }
 header>nav>div>ul>li>a:hover {
-	background-color: #E0DBDB;
-	color: #645858;
+	background-color: #5173ad;
+	color: #FFC556;
 	cursor: pointer;
 }
 /* section hero */
@@ -84,7 +109,7 @@ header>nav>div>ul>li>a:hover {
 	letter-spacing: 1pt;
 	line-height: 0.5em;
 }
-/* section knifes */
+/* section szkolenia */
 /* Column widths */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -118,7 +143,7 @@ header>nav>div>ul>li>a:hover {
 	height: 150px;
 	text-align: center;
  }
-.knifes {
+.szkolenia {
 	height: 100vh;
 	padding: 20px 0;
 	background-image: url("9ablue.png");
@@ -126,18 +151,18 @@ header>nav>div>ul>li>a:hover {
 	background-size: cover;
 
 }
-.knifes>.container {
+.szkolenia>.container {
 	text-align: center;
 }
 
-.knifes>.container>h2 {
+.szkolenia>.container>h2 {
 	font-size: 2.2em;
 	color: whitesmoke;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 3pt;
 }
-.knifes>.container>p {
+.szkolenia>.container>p {
 	font-size: 1.8em;
 	margin: auto;
 	color: whitesmoke;
@@ -145,7 +170,7 @@ header>nav>div>ul>li>a:hover {
 	letter-spacing: 1pt;
 }
 
-.knifes>.container>.row {
+.szkolenia>.container>.row {
 	margin-top: 40px;
 	height: auto;
 }
@@ -184,24 +209,30 @@ header>nav>div>ul>li>a:hover {
 .tree {
 	color: dodgerblue;
 }
-/* section forwhat */
-.forwhat {
-	padding-bottom: 20px;
-	height: 30vh;
+/* section wake */
+.wake {
+	height: auto;
+	
 }
-.forwhat>.container {
-	height: 100px;
+.wake>.container {
+	height: auto;
 	text-align: center;
 	font-weight: 700;
 	letter-spacing: 1pt;
-	width: 600px;
-	margin-top: 30px;
-	padding-bottom: 30px;
 	color: dodgerblue;
+	padding: 40px 0;
 }
-.forwhat>.container>h2 {
-	font-size: 28px;
-	margin-bottom: -10px;
+.wake>.container>h2 {
+	font-size: 2.2em;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 3pt;
+	
+}
+.wake>.container>p {
+	font-size: 1.6em;
+	font-weight: 700;
+	letter-spacing: 1pt;
 }
 /* section gallery */
 
@@ -249,17 +280,20 @@ header>nav>div>ul>li>a:hover {
 	box-sizing: border-box;	
 	background-color: white;
 	color: #645858;
-	padding-top: 25px;
+	padding: 25px;
+	height: 200px;
+
 }
-.about>.row {
-	padding-bottom: 200px;
-	height: 150px;
-	
-	
+.aboutcol {
+	text-align: right;
+	padding-right: 20px;
+	letter-spacing: 1pt;
 }
-.container>.row-2 {
-	text-align: center;
+.aboutcol2 {
+	text-align: left;
+	padding-left: 30px;
 }
+
 .face {
 	width: 100px;
 	height: 100px;
@@ -273,15 +307,44 @@ h3 {
 	padding-top: 0;
 	margin-top: 0;
 }
+/* section rejsy */
+.rejsy {
+	
+	height: 70vh;
+	background-image: url("f14.png");
+	background-size: cover;
+	background-position: 100% 30%;
+}
+.rejsy>.container {
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 1pt;
+	width: 700px;
+	padding-top: 0px;
+	color: whitesmoke;
+}
+.rejsy>.container>h2 {
+	font-size: 2.2em;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 3pt;
+	padding-top: 60px;
+}
+.rejsy>.container>p {
+	font-size: 1.6em;
+	margin: 20px auto;
+	font-weight: 700;
+	letter-spacing: 1pt;
+}
 /* section awesome */
 .awesome {
 	box-sizing: border-box;	
 	background-color: black;
 	color: white;
+	height: 30vh;
 }	
 .awesome>.row {
 	height: auto;
-	
 	display: block;
 }
 .phonetxt {
@@ -291,26 +354,29 @@ height: auto;
 .phonetxt h3 {
 	text-align: left;
 	margin: 5px 0 5px 50px;
+	font-size: 1.5em;
+	letter-spacing: 1.5pt;
 }
 .six1 {
 	width: 300px;
 	height: 90px;
     text-align: left;
     padding-left: 50px;
-    font-size: 12px;
+    font-size: 1em;
 }
 .six2 {
 	height: 90px;
 	text-align: left;
-	font-size: 12px;
+	font-size: 1em;
 	padding-left: 30px;
     width: 250px;
 }
 .awesomeimg {
-	background-image: url(https://images.pexels.com/photos/89955/pexels-photo-89955.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	margin-top: 35px;
+	background-image: url("rejsy.png");
     height: 150px;
 	background-size: cover;
-	background-position: top right;
+	background-position: bottom left;
 }
 .phone {
 	background-position: bottom right;
@@ -318,7 +384,7 @@ height: auto;
 /* section numbers */
 .numbers {
 	box-sizing: border-box;	
-	background-color: #b4aeae;
+	background-color: #FFC556;
 }	
 .numbers>.row {
 	height: 200px;
