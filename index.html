@@ -6,20 +6,22 @@
 		<title>Strona kamont sport wersja druga</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="style.js" language=javascript type="text/javascript"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin-ext" rel="stylesheet">
 	</head>
 	<body>
 		<header>
 			<nav>
+			    
 				<div class="row">
 					<img src="logotyp.png">
-					<ul>
-						<li><a href="#szkolenia1" rel="" >Szkolenia</a></li>
-						<li><a href="#wake1">Wake</a></li>
-						<li><a href="#rejsy1">Rejsy</a></li>
-						<li><a href="#onas1">O nas</a></li>
-						<li><a href="#kontakt1">Kontakt</a></li>
+					<a href="#ulmenu" class="menu-btn"></a>
+					<ul id="ulmenu">
+						<li><a href="#szkolenia1">Szkolenia</a></li>
+						<li><a class='amenu' href="#wake1">Wake</a></li>
+						<li><a class='amenu' href="#rejsy1">Rejsy</a></li>
+						<li><a class='amenu' href="#kontakt1">Kontakt</a></li>
+						
 					</ul>
 				</div>
 			</nav>
@@ -40,18 +42,18 @@
 				<p>Bez wyjazdów na Mazury czy nad Zegrze.</p>
 				
 				<div class="row">
-					<div class="col-4 col-s-12">
-						<button class="icon-btn thumbs-o-up"><i class="fa fa-thumbs-o-up"></i></button>
+					<div class="col-4 col-m-12 col-s-12">
+						<button class="icon-btn bolt"><i class="fa fa-bolt"></i></button>
 						<h3>Szybko</h3>
 						<p>10 godzin teorii, 3 godziny praktyki, Kurs zakończony egzaminem.</p>
 					</div>
-					<div class="col-4 col-s-12">
-						<button class="icon-btn twitter"><i class="fa fa-twitter"></i></button>
+					<div class="col-4 col-m-12 col-s-12">
+						<button class="icon-btn handshake"><i class="fa fa-handshake-o"></i></button>
 						<h3>Skutecznie</h3>
 						<p>Przeszkoliliśmy 450 osób. Zajęcia w Porcie Czerniakowskim</p>
 					</div>
-					<div class="col-4 col-s-12">
-						<button class="icon-btn tree"><i class="fa fa-tree"></i></button>
+					<div class="col-4 col-m-12 col-s-12">
+						<button class="icon-btn money"><i class="fa fa-money"></i></button>
 						<h3>Tanio</h3>
 						<p>Koszt kursu: 450 zł. Koszt egzaminu 250 zł. Wystawiamy faktury.</p>
 					</div>
@@ -118,6 +120,7 @@
 				</div>
 			</div>
 		</section>
+		<!--section rsjsy -->	
 		<section class="rejsy" id="rejsy1">
 			<div class="container">
 				<h2>Rejsy po Wiśle</h2>
@@ -132,13 +135,13 @@
 					<div class="col-4 phone col-s-12">
 						<div class="awesomeimg"></div>
 					</div>
-					<div class="col-8 phonetxt">
+					<div class="col-8 col-m-12 col-s-12 phonetxt">
 						<h3>Szybko i tanio</h3>
 						<div class="row tworow">
-							<div class="col-6 six1">
+							<div class="col-6 col-m-6 col-s-12 six1">
 								<p>Rejs po Warszawskim odcinku Wisły szybką łodzią motorowa Stratus 550 (170 koni mechanicznych). Popłyniesz z doświadczonym instruktorem motorowodnym i stermotorzystą.</p>
 							</div>
-							<div class="col-6 six2">
+							<div class="col-6 col-m-6 col-s-12 six2">
 								<p>W godzinę zwiedzimy kawał Wisły. Niewiele zapłacisz: rejs do 3 osób - 250 zł. 4-6 osób - 300 zł.</p>
 							</div>
 						</div>
@@ -148,15 +151,15 @@
 		</section>
 		
 <!--section footer -->	
-		<section class="about" id="onas1">
+		<section class="about" id="kontakt1">
 			<div class="container">	
 				<div class="row about-row">
-					<div class="col-8 col-s-6 aboutcol">
+					<div class="col-8 col-s-12 aboutcol">
 						<h3>Piotr Kamont</h3>
-						<p> Instruktor motorowodny, instruktor narciarski. Od 12 lat zajmuję się pływaniem po Wiśle. Główny bohater filmu "XYZ". Spłyną Wisłą z Zamościa do Gdańska. Niezwykle doświadczony, zakochany w rzece. </p>
+						<p> Instruktor motorowodny, instruktor narciarski. Od 12 lat zajmuję się pływaniem po Wiśle. Główny bohater filmu "Wszystko płynie". Spłynął Wisłą z Zamościa do Gdańska. Doświadczony, zakochany w rzece. </p>
 						
 					</div>
-					<div class="col-4 col-s-6 aboutcol2">
+					<div class="col-4 col-s-12 aboutcol2">
 						<img src="piotr.png" class="icon-btn face">
 								
 					</div>
@@ -173,7 +176,7 @@
 					</div>
 					<div class="col-3 col-s-6">
 						<h3>128</h3>
-						<p>tyle rejsów odbyłem z klientami</p>
+						<p>Tyle rejsów odbyłem z klientami</p>
 					</div>
 					<div class="col-3 col-s-6">
 						<h3>124</h3>
@@ -188,12 +191,12 @@
 			</div>
 		</section>
 <!--section kontakt-->		
-		<section class="footer" id="kontakt1">
+		<section class="footer">
 			<div class="container">
 				<div class="row rowfooter">
 					<div class="col-4 colfo-1 .col-s-12">
-						<h3>Rezerwój</h3>
-						<p>Wszystkie szkolenia, rejsy, wycieczki możesz zarezerwować telefonicznie lub mailowo. Również o wszystkie szczeóły najlepiej pytać bezpośrednio. Nie czekaj. Dzwoń.</p>
+						<h3>Rezerwuj</h3>
+						<p>Wszystkie szkolenia, rejsy, wycieczki możesz zarezerwować telefonicznie lub mailowo. Również o wszystkie szczegóły najlepiej pytać bezpośrednio. Nie czekaj. Dzwoń.</p>
 					</div>
 					<div class="col-4 colfo-2 .col-s-12">
 						<h3>Kontakt</h3>
@@ -225,7 +228,7 @@
 					<div class="col-4 colfo-3 .col-s-12">
 						<div class="colfo3top">
 							<h3>Media</h3>
-							<p>Skorzystaj z naszych profili w mediach społecznościowych.</p>
+							<p>Nasze profile  społecznościowe.</p>
 						</div>
 						<div class="col-10 colfo3row">
 							<div class="col-2 colfo3rowcol-1 col-s-4">
@@ -250,10 +253,10 @@
 					</div>
 				</div>
 			</div>	
-			<div class="col-12 copy">
-				<p>copyright Jakub Rozpruwacz</p>
-			</div>
 		</section>
+		<div class="col-12 copy">
+				<p>copyright Jakub Karp.</p>
+			</div>
 <!--skrypt rolling scroll-->		
 <!--	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>	-->
 		<!-- scroll-up button -->
