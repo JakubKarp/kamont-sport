@@ -144,7 +144,7 @@ header>nav>div>ul>li>a:hover {
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
-	height: 150px;
+	height: auto;
 	text-align: center;
  }
 .szkolenia {
@@ -224,7 +224,7 @@ header>nav>div>ul>li>a:hover {
 	font-weight: 700;
 	letter-spacing: 1pt;
 	color: dodgerblue;
-	padding-top: 40px;
+	padding-top: 20px;
     margin: 0 auto;
 }
 .wake>.container>h2 {
@@ -285,7 +285,7 @@ header>nav>div>ul>li>a:hover {
 /* section rejsy */
 .rejsy {
 	
-	height: 70vh;
+	height: 60vh;
 	background-image: url("f14.png");
 	background-size: cover;
 	background-position: 100% 30%;
@@ -316,7 +316,7 @@ header>nav>div>ul>li>a:hover {
 	box-sizing: border-box;	
 	background-color: black;
 	color: white;
-	height: 30vh;
+	height: 40vh;
     
 }	
 .awesome>.row {
@@ -350,7 +350,7 @@ height: auto;
 }
 .awesomeimg {
 	background-image: url("rejsy.png");
-    height: 20vh;
+    height: 30vh;
 	background-size: cover;
 	background-position: bottom left;
     margin-top: 30px;
@@ -364,7 +364,7 @@ height: auto;
 	background-color: white;
 	color: #645858;
 	padding: 40px;
-	height: 30vh;
+	height: 40vh;
 
 }
 .aboutcol {
@@ -395,7 +395,7 @@ h3 {
 	box-sizing: border-box;	
 	background-color: #FFC556;
     height: 20vh;
-    padding-top: 30px;
+    padding-top: 10px;
 }	
 .numbers h3 {
 	margin-top: 10px;
@@ -418,7 +418,7 @@ h3 {
 	color: white;
 	padding-top: 0px;
     margin: 0;
-    height: 40vh;
+    height: 60vh;
 }	
 .footer>.row {
 	display: block;
@@ -429,6 +429,7 @@ h3 {
 	height: auto;
 	text-align: left;
     font-size: 1em; 
+    margin-top: 2em;
  }
 .colfo-1>p {
     font-size: 1em;
@@ -490,13 +491,15 @@ h3 {
 	margin-left: -10px;
 }
 .copy {
-height: 7vh;
+height: 10vh;
 text-align: center;
 margin: 0 auto;
 color: white;
 background-color: black;
 font-size: 12px;
 }
+
+
 
 
 
